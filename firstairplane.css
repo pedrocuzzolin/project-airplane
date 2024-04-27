@@ -1,0 +1,79 @@
+body {
+  padding: 0;
+  text-align: center;
+  overflow: hidden;
+}
+  
+#firstpage {
+  padding: 20px 0px;
+}
+  
+#gamepage {
+  display: flex;
+  width: 100vw;
+  padding: 20px 0px;
+  justify-content: space-around;
+}
+  /*.airplane {
+
+    height: 100px;
+    width: 100px;
+    background-color: rgba(45, 41, 41, 0.998);
+    position: absolute;
+    left: 0;
+    top: 0;
+}*/
+  
+#game-screen {
+  display: none;
+  height: 500;
+  width: 500;
+  align-content: center;
+  padding: 20px 0px;
+  overflow: hidden;
+  position: relative;
+  background-image: url(../images/skybackground.png);
+  background-size: cover;
+  animation: slide 5s linear infinite;
+  }
+  
+@keyframes slide {
+  0% {
+    background-position: 0 -1000px;
+  }
+  95% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 0 50px;
+  }
+}
+  
+#gameover {
+  display: none;
+}
+  
+.gamepage p {
+  font-size: 18px;
+  font-family: "Verdana";
+}
+  
+.logo-img {
+  width: 350px;
+}
+  
+.arrows-img {
+  width: 150px;
+}
+  
+body button {
+  font-size: 30px;
+  background-color: #065230;
+  color: #fff;
+  padding: 20px 40px;
+  border: 0;
+  box-shadow: 0;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+  

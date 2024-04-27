@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset='utf-8' />
+        <meta name='viewport' content='width=device-width, initial-scale=1' />
+        <meta http-equiv='X-UA-Compatible' content='IE=edge' />
+        <link rel="stylesheet" href=".\WD\Ironhack\week6\project\firstairplane.css">
+        <title>First Airplane</title>
+    </head>
+    <body>
+        <main>
+            <div id="firstpage">
+                <p>First Airplane</p>
+                <img src="./images/airintro.png"  alt="" class="logo-img" />
+                <br />
+                <button id="start-button">Start your FLY</button>
+                <p> Use 4 5 6 8 to control your airplane!!!</p>
+                <img src="./images/teclas.jpg" alt="" class="arrows-img" />
+            </div>
+
+            <div id="gamepage">
+                <div>
+
+                    <h2>Status</h2>
+                    <p>Fuel: <span id="fuel">0</span></p>
+                    <p>Kilometers: <span id="kilometers">0</span></p>
+                    <p>Lives: <span id="lives">3</span></p>
+                </div>
+                <div id="game-screen"></div>
+            </div>
+            
+            <div id="gameover">
+                <img src="./images/airintro.png" alt="" class="logo-img" />
+                <h1>Game Over</h1>
+                <br />
+                <button id="restart-button">Restart</button>
+            </div>
+        </main>
+
+        <script type="text/javascript" src="project/obstacle.js"></script>
+        <script type="text/javascript" src="project/player.js"></script>
+        <script type="text/javascript" src="project/firstplane.js"></script>
+        <script type="text/javascript" src="project/airscript.js"></script>
+    </body>
+</html>
