@@ -14,15 +14,15 @@ body {
   padding: 20px 0px;
   justify-content: space-around;
 }
-  /*.airplane {
+.airplane {
 
-    height: 100px;
-    width: 100px;
-    background-color: rgba(45, 41, 41, 0.998);
-    position: absolute;
-    left: 0;
-    top: 0;
-}*/
+  height: 100px;
+  width: 100px;
+  background-color: rgba(45, 41, 41, 0.998);
+  position: absolute;
+  left: 0;
+  top: 0;
+}
   
 #game-screen {
   display: none;

@@ -3,10 +3,7 @@ class Game {
         this.firstpage = document.querySelector('#firstpage');
         this.gamepage = document.querySelector('#gamepage');
         this.gameover = document.querySelector('#gameover');
-
-
-        this.player = new Player(this.gamepage, 200, 500, 100, 150, "./images/airplane.png"
-        ); 
+        this.player = new Player(this.gamepage, 200, 500, 100, 150, "./images/airplane.png"); 
         this.counter = 0;
         this.generationSpeed = 180;
         
