@@ -17,7 +17,8 @@ class Player {
         this.element.style.left = `${left}px`;
         this.element.style.top = `${top}px`;
     
-        this.gamepage.appendChild(this.element);
+       /* this.gamepage.appendChild(this.element);*/
+        this.gameScreen.appendChild(this.element);
     }  
     move() {
         

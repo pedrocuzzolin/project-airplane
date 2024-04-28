@@ -2,7 +2,7 @@ window.onload = function () {
 
 
   
-const airplane = document.querySelector(".airplane")
+/*const airplane = document.querySelector(".airplane")
 let airplaneTop = 0
 let airplaneLeft = 0
 window.addEventListener("keypress", (event) => {
@@ -32,7 +32,7 @@ right    39
 down     40   */
 
 const startButton = document.getElementById("start-button");
- const restartButton = document.getElementById("restart-button");
+const restartButton = document.getElementById("restart-button");
   
 let game;
     
@@ -66,11 +66,10 @@ function startGame() {
     }; 
   }
   window.addEventListener("keydown", movePlayer);
-
-  function stopPlayer(event) {
+};
+  /*function stopPlayer(event) {
     game.player.directionX = 0;
     game.player.directionY = 0;
   }
   window.addEventListener("keyup", stopPlayer);
-};
-  
+};*/
