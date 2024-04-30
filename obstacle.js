@@ -7,7 +7,7 @@ class Obstacles {
         this.height = 150;
         this.element = document.createElement("img");
     
-        this.element.src = ".project/images/airobstacle.jpg";
+        this.element.src = "./images/airobstacle.jpg";
         this.element.style.position = "absolute";
         this.element.style.width = `${this.width}px`;
         this.element.style.height = `${this.height}px`;
@@ -16,4 +16,6 @@ class Obstacles {
     
         this.gameScreen.appendChild(this.element);
       }
+
+      move() {}
 }
