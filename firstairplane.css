@@ -6,6 +6,7 @@ body {
   
 #firstpage {
   padding: 20px 0px;
+  
 }
   
 #gamepage {
@@ -13,6 +14,7 @@ body {
   width: 100vw;
   padding: 20px 0px;
   justify-content: space-around;
+ 
 }
 .airplane {
 
@@ -26,13 +28,14 @@ body {
   
 #game-screen {
   display: none;
-  height: 500;
+  height: 1000;
   width: 500;
   align-content: center;
   padding: 20px 0px;
   overflow: hidden;
   position: relative;
-  background-image: url(../images/skybackground.png);
+  background-image: url(../project/images/skybackground2.jpg);
+  
   background-size: cover;
   animation: slide 5s linear infinite;
   }
@@ -59,11 +62,11 @@ body {
 }
   
 .logo-img {
-  width: 350px;
+  width:500px;
 }
   
 .arrows-img {
-  width: 150px;
+  width: 100px;
 }
   
 body button {

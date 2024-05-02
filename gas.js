@@ -1,13 +1,13 @@
-class Obstacles {
+class Gas {
     constructor(gameScreen) {
         this.gameScreen = gameScreen;
-        this.left = Math.floor(Math.random() * 500 + 50);
+        this.left = Math.floor(Math.random() * 300 + 50);
         this.top = 0;
-        this.width = 40;
-        this.height = 40;
+        this.width = 30;
+        this.height = 30;
         this.element = document.createElement("img");
     
-        this.element.src = "./images/airobstacle.jpg";
+        this.element.src = "./images/fuelstation.jpg"
         this.element.style.position = "absolute";
         this.element.style.width = `${this.width}px`;
         this.element.style.height = `${this.height}px`;
