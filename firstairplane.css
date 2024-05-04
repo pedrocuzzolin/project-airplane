@@ -34,7 +34,7 @@ body {
   padding: 20px 0px;
   overflow: hidden;
   position: relative;
-  background-image: url(../project/images/skybackground2.jpg);
+  background-image: url(./images/skybackground2.jpg);
   
   background-size: cover;
   animation: slide 5s linear infinite;

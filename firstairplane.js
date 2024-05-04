@@ -35,7 +35,7 @@ class Game {
         if (this.gameIsOver) {
             clearInterval(this.gameIntervalId);
             this.gamepage.style.display = "none";
-            this.endScreen.style.display = "block";
+            this.gameEndScreen.style.display = "block";
         }
     }
     update() {
@@ -53,7 +53,7 @@ class Game {
         }
        
         this.counter++;
-        this.obstacles.forEach((obstacle) => {  
+        this.obstacles.forEach((obstacle, index) => {  
             obstacle.move();
             if (obstacle.top === this.gamepage.offsetHeight -10) {
                 this.obstacles.splice(index, 1);
@@ -77,10 +77,11 @@ class Game {
                 index--;
                 const livesCounter = this.gamepage.parentElement.querySelector("#lives");
                 livesCounter.innerText = this.lives
-                if (this.lives === 0) 
-                this.gameIsOver = true;
-                this.gameScreen.style.display = "none";
-                this.gameEndScreen.style.display = "block";
+                if (this.lives === 0)  {
+                    this.gameIsOver = true;
+                    this.gamepage.style.display = "none";
+                    this.gameEndScreen.style.display = "block";
+                }
               }
             
         });
