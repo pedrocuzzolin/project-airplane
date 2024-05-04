@@ -42,7 +42,7 @@ class Game {
         this.kilometers +=1   
         const kilometersCounter = this.gamepage.parentElement.querySelector("#kilometers");
         kilometersCounter.innerText = this.kilometers;
-        if (this.kilometers >= 10000) {
+        if (this.kilometers >= 1000) {
             this.gameIsOver = true;
             clearInterval(this.gameIntervalId);
             this.gamepage.style.display = "none";
@@ -58,8 +58,14 @@ class Game {
             if (obstacle.top === this.gamepage.offsetHeight -10) {
                 this.obstacles.splice(index, 1);
                 obstacle.element.remove();
-                this.counter++;
-
+             
+        /*this.gas.forEach((gas) => {  
+            gas.move();
+            if (gas.top === this.gamepage.offsetHeight -10) {
+                this.obstacles.splice(index, 1);
+                obstacle.element.remove();
+                this.counter++;   
+                     
                 /*const obstaclecounter = this.gamepage.parentElement.querySelector("#kilometers")
                 kilometersCounter.innerText = this.kilometers
                 console.log(this.obstacles);*/

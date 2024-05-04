@@ -8,7 +8,9 @@ let game;
 startButton.addEventListener("click", function() {
   startGame();
 });
-  
+restartButton.addEventListener("click", function() {
+  startGame();
+});  
 function startGame() {
   game = new Game();
   game.start();
@@ -35,4 +37,6 @@ function startGame() {
     game.player.directionX = 0;
     game.player.directionY = 0;
   })
+
+
 };

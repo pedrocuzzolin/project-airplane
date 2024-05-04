@@ -29,3 +29,5 @@ class Obstacles {
         this.updatePosition();
       }
     };
+
+    
